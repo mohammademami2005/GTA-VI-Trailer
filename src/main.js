@@ -15,7 +15,6 @@ const logoText = main.querySelector("#logoText");
 const logoImg = main.querySelector("#logoImg");
 const section2 = main.querySelector("#section2");
 
-
 // --------------------------------------
 // 🎯 تنظیمات اسکیل لوگو
 // --------------------------------------
@@ -49,33 +48,42 @@ window.addEventListener("scroll", () => {
 
     // تغییر تصویر لوگو در پایان انیمیشن
     if (progress === 1) {
-      logoImg.setAttribute('src', '/logoWhite2.png');
-      logoText.style.backgroundColor = 'black';
+      logoImg.setAttribute("src", "/logoWhite2.png");
+      logoText.style.backgroundColor = "black";
 
-      if(scrollY >= 2100){
+      if (scrollY >= 2100) {
         let newScroll2 = scrollY - 2100;
         let p = Math.max(Math.min(0.4 - newScroll2 / 1000, 0.4), 0.1);
         logoImg.style.transform = `scale(${p})`;
-        logoImg.style.transition = 'none'
-        if(p == 0.1){
-          logoImg.style.transition = 'all 1s ease-in-out';
-          logoImg.style.marginBottom = '300vh';
-          // hero.style.marginBottom = '300vh';
-          // logoText.style.marginBottom = '300vh';
-          console.log(scrollY);
-        }else{
-          logoImg.style.marginBottom = '0';
+        logoImg.style.transition = "none";
+        if (p == 0.1) {
+          logoImg.style.transition = "all 1s ease-in-out";
+          logoImg.style.marginBottom = "300vh";
+          // hero.style.marginBottom = "300vh";
+          // logoText.style.marginBottom = "300vh";
+          if (scrollY >= 2600) {
+            let p = Math.min((scrollY - 2600) / 100, 1);
+            section2.classList.remove("hidden");
+            section2.classList.add("flex" , 'border-white');
+            const imgInSection2 = section2.querySelector("img");
+            const h2InSection2 = section2.querySelector("h2");
+            imgInSection2.style.opacity = p;
+            h2InSection2.style.opacity = p;
+            if(scrollY >= 2700){
+              section2.style.position = "sticky";
+              section2.style.top = "0";
+              
+            }
+          }
+        } else {
+          logoImg.style.marginBottom = "0";
         }
       }
     } else {
-      logoImg.setAttribute('src', '/img/VIstack.bc737d6e.svg');
+      logoImg.setAttribute("src", "/img/VIstack.bc737d6e.svg");
     }
-
   } else {
     logoText.classList.add("hidden");
     logoText.classList.remove("flex");
   }
-
-
 });
-

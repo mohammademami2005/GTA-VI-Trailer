@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <main id="app" class="overflow-x-hidden bg-black">
+    <main id="app" class="bg-black w-screen h-[500vh] overflow-x-hidden">
       <div
         id="hero"
         class="w-screen h-screen fixed top-0 left-0 overflow-x-hidden transform scale-100"
@@ -38,16 +38,30 @@
           id="logoImg"
         />
       </div>
-      <div class="hidden absolute top-0 left-0" id="section2">
-        <img src="/img/logoVi.webp" alt="" />
-        <h2>Coming November 19 2026</h2>
+      <div
+        class="w-screen h-screen hidden flex-col justify-center items-center z-30 mt-[2700px]"
+        id="section2"
+      >
+        <img
+          src="/img/logoVi.webp"
+          alt=""
+          class="opacity-0 w-52 h-52 object-contain"
+        />
+        <h2
+          class="text-white text-9xl opacity-0 w-[80%] text-center"
+          style="
+            background: linear-gradient(90deg, #ff4d4d, #ff00ff, #00eaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        >
+          Coming <br />
+          November 19 <br />
+          2026
+        </h2>
       </div>
 
-      <div class="w-full h-[500vh]">asdf</div>
-      <div class="w-full h-[500vh]">asdf</div>
-      <div class="w-full h-[500vh]">asdf</div>
-      <div class="w-full h-[500vh]">asdf</div>
-      <div class="w-full h-[500vh]">asdf</div>
+      <!-- <div class="w-full h-[1500vh]">asdf</div> -->
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
