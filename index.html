@@ -7,8 +7,12 @@
     <title>gta-vi-trailer</title>
   </head>
 
-  <body>
-    <main id="app" class="bg-black w-screen h-[500vh] overflow-x-hidden">
+  <body class="scroll-smooth">
+    <main
+      id="app"
+      class="bg-black w-screen h-[5000vh] overflow-x-hidden scroll-smooth"
+    >
+      <!-- hero section -->
       <div
         id="hero"
         class="w-screen h-screen fixed top-0 left-0 overflow-x-hidden transform scale-100"
@@ -25,8 +29,16 @@
           class="w-full h-full object-cover absolute top-0 left-0 z-10"
           id="img1"
         />
+        <img
+        id="playSvg"
+          src="public/play-circle.svg"
+          alt=""
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-32"
+        />
       </div>
+      <!-- hero section -->
 
+      <!-- logo section -->
       <div
         id="logoText"
         class="w-screen h-screen justify-center items-center fixed top-0 left-0 z-20 hidden"
@@ -38,8 +50,10 @@
           id="logoImg"
         />
       </div>
+      <!-- logo section -->
+      <!-- section 2  -->
       <div
-        class="w-screen h-screen hidden flex-col justify-center items-center z-30 mt-[2700px]"
+        class="w-screen h-screen hidden flex-col justify-center items-center z-30 mt-[3000px]"
         id="section2"
       >
         <img
@@ -60,8 +74,314 @@
           2026
         </h2>
       </div>
+      <!-- section 2  -->
+      <!-- section 3 -->
+      <div
+        class="w-full h-full hidden left-0 top-0 justify-center items-center flex-col z-50"
+        id="section3"
+      >
+        <h2
+          class="text-9xl w-[60%] opacity-0"
+          style="
+            background: linear-gradient(90deg, #ff4d4d, #ff00ff, #00eaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        >
+          Vice City, USA.
+        </h2>
+        <h3
+          class="text-5xl w-[70%] text-justify-center opacity-0"
+          style="
+            background: linear-gradient(180deg, #ff4d4d, #ff00ff, #00eaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        >
+          Jason and Lucia have always known the deck is stacked against them.
+          But when an easy score goes wrong, they find themselves on the darkest
+          side of the sunniest place in America, in the middle of a criminal
+          conspiracy stretching across the state of Leonida — forced to rely on
+          each other more than ever if they want to make it out alive.
+        </h3>
+        <div
+          class="w-full h-full absolute top-0 left-0 z-50 bg-neutral-900"
+          id="section3Circle2"
+        ></div>
+      </div>
+      <!-- section 3 -->
 
-      <!-- <div class="w-full h-[1500vh]">asdf</div> -->
+      <!-- section 6 -->
+      <div
+        id="section6"
+        class="absolute top-[6000px] left-0 bg-red-600 z-400 w-full h-[100vh]"
+      >
+        <canvas id="videoCanvas2" class="w-full h-full"></canvas>
+        <video
+          id="JasonVideo2"
+          src="/public/video/768.db8d79e401230d4c2717ad2e0b5b5185 (1).mp4"
+          preload="auto"
+          muted
+          playsinline
+          style="position: absolute; top: -9999px; left: -9999px"
+        ></video>
+      </div>
+
+      <!--section 6 -->
+
+      <!-- section 4  -->
+      <section
+        id="section4"
+        class="hidden justify-between fixed top-full left-0 z-500 w-full h-screen flex-wrap gap-[1%] pl-[18%] pb-[10%]"
+      >
+        <div class="w-[49%] h-screen flex flex-col justify-evenly items-center">
+          <h2 class="text-[#fff9cb] text-6xl text-center w-3/4">Jason Duval</h2>
+          <h3 class="text-[#ffb0c4] text-4xl text-start w-3/4">
+            Jason wants an easy life, but things just keep getting harder.
+          </h3>
+          <p class="text-3xl text-start text-white w-3/4">
+            Jason grew up around grifters and crooks. After a stint in the Army
+            trying to shake off his troubled teens, he found himself in the Keys
+            doing what he knows best, working for local drug runners. It might
+            be time to try something new.
+          </p>
+        </div>
+        <figure class="w-[49%] h-screen mt-[35vh]">
+          <img
+            src="/public/img/Jason Duval/Jason_Duval_02.jpg"
+            alt=""
+            class="w-full h-full object-cover object-bottom-left"
+          />
+        </figure>
+        <figure class="w-[49%] h-screen">
+          <img
+            src="/public/img/Jason Duval/Jason_Duval_01.jpg"
+            alt=""
+            class="w-full h-full object-cover object-bottom-right"
+          />
+        </figure>
+        <figure class="w-1/4 h-3/6 mr-auto">
+          <img
+            src="/public/img/Jason Duval/Jason_Duval_06.jpg"
+            alt=""
+            class="w-full h-full object-cover object-center"
+          />
+        </figure>
+        <a href="/simple.html" class="">simple</a>
+      </section>
+
+      <!-- section 4  -->
+
+      <!-- section 5 -->
+      <div
+        id="section5"
+        class="absolute top-[15000px] left-0 bg-red-600 z-300 w-full h-full"
+      >
+        <canvas id="videoCanvas" class="w-full h-full"></canvas>
+        <video
+          id="JasonVideo"
+          src="/public/768.11d06cf5cdc0ab989c76136230dde4e3.mp4"
+          preload="auto"
+          muted
+          playsinline
+          style="position: absolute; top: -9999px; left: -9999px"
+        ></video>
+      </div>
+      <!-- section 5 -->
+
+      <!-- section 7  -->
+      <section
+        id="section7"
+        class="hidden justify-between absolute top-[13000px] left-0 z-500 w-full flex-wrap pb-[10%] bg-neutral-900"
+      >
+        <div class="w-[49%] h-screen flex flex-col justify-evenly items-center">
+          <h2 class="text-[#fff9cb] text-6xl text-center w-full">
+            <q>If anything happens, I'm right behind you.</q>
+          </h2>
+          <h3 class="text-[#ffb0c4] text-4xl text-start w-1/2">
+            Another day in paradise, right?
+          </h3>
+        </div>
+        <p
+          class="text-3xl text-start text-white flex justify-center items-center w-1/4 mr-auto"
+        >
+          Meeting Lucia could be the best or worst thing to ever happen to him.
+          Jason knows how he'd like it to turn out but right now, it's hard to
+          tell.
+        </p>
+        <figure class="w-[49%] h-screen flex flex-wrap gap-[3%]">
+          <img
+            src="/public/img/Jason Duval/Jason_Duval_05.jpg"
+            alt=""
+            class="w-full h-full object-cover object-bottom-left"
+          />
+
+          <img
+            src="/public/img/Jason Duval/Jason_Duval_03.jpg"
+            alt=""
+            class="w-[80%] h-[30%] object-cover ml-auto"
+          />
+        </figure>
+        <figure class="w-[49%] h-screen mt-[35vh]">
+          <img
+            src="/public/img/Jason Duval/Jason_Duval_04.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </figure>
+      </section>
+      <!-- section 7  -->
+
+      <!-- section 8 -->
+      <figure
+        id="section8"
+        class="w-full h-screen bg-red-50 fixed top-0 left-0 opacity-0 z-900"
+      >
+        <img
+          src="public/img/Jason Duval/couple.png"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </figure>
+      <!-- section 8 -->
+
+      <!-- lusia section 9 -->
+      <section
+        class="grid grid-cols-12 grid-rows-16 gap-3 w-full h-[200vh] absolute top-[17000px] left-0 z-500"
+      >
+        <figure class="col-span-6 col-start-1 row-start-3 row-span-7">
+          <img
+            src="/img/Lucia Caminos/Lucia_Caminos_01.jpg"
+            alt=""
+            class="w-full h-full bg-cover bg-right"
+          />
+        </figure>
+        <div
+          class="row-start-1 row-span-8 col-start-7 col-span-12 flex justify-start gap-5 items-center flex-col"
+        >
+          <h2 class="text-[#fff9cb] text-8xl w-full text-center my-5">
+            Lucia Caminos
+          </h2>
+          <h3 class="text-[#ffb0c4] text-5xl text-start w-1/2">
+            Lucia’s father taught her to fight as soon as she could walk.
+          </h3>
+          <p
+            class="text-3xl text-start text-white flex justify-center items-center w-1/2"
+          >
+            Life has been coming at her swinging ever since. Fighting for her
+            family landed her in the Leonida Penitentiary. Sheer luck got her
+            out. Lucia’s learned her lesson — only smart moves from here.
+          </p>
+        </div>
+        <figure class="-400 row-start-10 row-span-7 col-start-3 col-span-4">
+          <img
+            src="/img/Lucia Caminos/Lucia_Caminos_05.jpg"
+            alt=""
+            class="w-full h-full bg-cover bg-right"
+          />
+        </figure>
+        <div class="row-start-9 row-span-4 col-start-7 col-end-12">
+          <img
+            src="/img/Lucia Caminos/Lucia_Caminos_02.jpg"
+            alt=""
+            class="w-full h-full bg-cover bg-right"
+          />
+        </div>
+        <div
+          class="row-start-13 row-span-4 col-start-7 col-span-4 flex justify-center items-center"
+        >
+          <p
+            class="text-2xl text-start text-white flex justify-center items-center w-1/2"
+          >
+            More than anything, Lucia wants the good life her mom has dreamed of
+            since their days in Liberty City — but instead of half-baked
+            fantasies, Lucia is prepared to take matters into her own hands.
+          </p>
+        </div>
+      </section>
+      <!-- lusia section 9 -->
+
+      <!-- section 10 video  -->
+      <section
+        id="section10"
+        class="absolute top-[18600px] left-0 z-400 w-full h-[100vh]"
+      >
+        <canvas id="videoCanvas3" class="w-full h-full"></canvas>
+        <video
+          id="JasonVideo3"
+          src="/public/img/Lucia Caminos/768.310eb62dcc4e6b65a7cbb11c2ba3264d.mp4"
+          preload="auto"
+          muted
+          playsinline
+          style="position: absolute; top: -9999px; left: -9999px"
+        ></video>
+      </section>
+      <!-- section 10 video  -->
+
+      <!-- section 11 -->
+      <section
+        id="section11"
+        class="grid gap-2 grid-cols-6 grid-rows-15 w-full h-[200vh] absolute top-[20300px] left-0 z-500"
+      >
+        <h2
+          class="col-start-1 col-span-12 row-start-1 row-span-2 text-[#fff9cb] text-6xl w-full text-center p-[2%]"
+        >
+          <q>The only thing that matters is who you know and what you got. </q>
+        </h2>
+        <p
+          class="col-start-2 col-span-2 row-start-3 row-span-3 text-white text-2xl text-start w-full flex justify-center items-center"
+        >
+          Fresh out of prison and ready to change the odds in her favor, Lucia’s
+          committed to her plan — no matter what it takes.
+        </p>
+        <p
+          class="col-start-4 col-span-2 row-start-3 row-span-2 text-[#ffb0c4] text-5xl text-center"
+        >
+          A life with Jason could be her way out.
+        </p>
+        <figure
+          class="col-start-2 col-span-2 row-end-13 row-start-6 bg-cyan-500"
+        >
+          <img
+            src="/img/Lucia Caminos/Lucia_Caminos_06.jpg"
+            alt=""
+            class="w-full h-full bg-cover bg-center"
+          />
+        </figure>
+        <figure
+          class="col-start-4 col-span-3 row-start-5 row-span-7 bg-orange-700"
+        >
+          <img
+            src="/img/Lucia Caminos/Lucia_Caminos_04.jpg"
+            alt=""
+            class="w-full h-full bg-cover bg-left"
+          />
+        </figure>
+        <figure class="col-start-4 col-span-2 row-span-3 bg-fuchsia-600">
+          <img
+            src="/img/Lucia Caminos/Lucia_Caminos_03.jpg"
+            alt=""
+            class="w-full h-full bg-cover bg-center"
+          />
+        </figure>
+      </section>
+      <!-- section 11 -->
+      <svg
+        width="34"
+        height="14"
+        viewBox="0 0 34 14"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
+        class="fixed bottom-5 left-1/2 fill-red-600 an z-99999999999"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M33.5609 1.54346C34.0381 2.5875 33.6881 3.87821 32.7791 4.42633L17.0387 13.9181L1.48663 4.42115C0.580153 3.86761 0.235986 2.57483 0.717909 1.53365C1.19983 0.492464 2.32535 0.097152 3.23182 0.650692L17.0497 9.08858L31.051 0.64551C31.96 0.0973872 33.0837 0.499411 33.5609 1.54346Z"
+          fill="inherit"
+        ></path>
+      </svg>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
