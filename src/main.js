@@ -26,6 +26,42 @@ const section8 = main.querySelector("#section8");
 const section10 = main.querySelector("#section10");
 const section11 = main.querySelector("#section11");
 
+document.querySelectorAll(".cardHover").forEach((item) => {
+  const img = document.createElement("img");
+  img.classList.add("customSvg");
+  img.src = "/img/maximize-2.svg";
+  item.appendChild(img);
+  console.log(item.firstElementChild.getAttribute("src"), "iasdfjlkadsfj");
+  item.addEventListener("click", () => {
+    const src = item.firstElementChild.getAttribute("src");
+    const moduleWindow = document.createElement("div");
+    moduleWindow.classList.add(
+      "fixed",
+      "top-0",
+      "left-0",
+      "w-full",
+      "h-full",
+      "bg-black",
+      "bg-opacity-80",
+      "flex",
+      "justify-center",
+      "items-center",
+      "z-9999"
+    );
+    moduleWindow.innerHTML = `
+      <div class="relative w-[90%] h-[90%] bg-black rounded-lg overflow-hidden">
+        <img src="${src}" class="w-full h-full object-contain " alt='photo'/>
+          <img id="closeBtn"  src="/img/close-circle.svg" class="w-10 h-10 absolute top-2 right-2  cursor-pointer" alt='close'/>
+      </div>
+    `;
+    document.body.appendChild(moduleWindow);
+    const closeBtn = moduleWindow.querySelector("#closeBtn");
+    closeBtn.addEventListener("click", () => {
+      document.body.removeChild(moduleWindow);
+    });
+  });
+});
+
 // --------------------------------------
 // 🎯 تنظیمات اسکیل لوگو
 // --------------------------------------
@@ -194,7 +230,8 @@ window.addEventListener("scroll", () => {
   let opacity = 1 - scrollY / window.innerHeight;
   opacity = Math.max(0.05, Math.min(1, opacity));
   img1.style.opacity = opacity;
-  hero.querySelector('#playSvg').style.opacity = opacity
+  hero.querySelector("#playSvg").style.opacity = opacity;
+  hero.querySelector("#whatchTrailer").style.opacity = opacity;
 
   // نمایش لوگو از 800px
   if (scrollY >= 800) {
@@ -288,7 +325,7 @@ window.addEventListener("scroll", () => {
 
                       // -----------------------------------------------------13000-----------------------------------------------
                       if (scrollY >= 13000) {
-                        section7.classList.replace("hidden", "flex");
+                        section7.classList.replace("hidden", "grid");
                         section5.style.opacity = 1 - p_1;
                         // section8.classList.replace("hidden", "flex");
 
@@ -319,9 +356,10 @@ window.addEventListener("scroll", () => {
                                   if (scrollY >= 20000) {
                                     section11.style.position = "absolute";
                                     section11.style.top = "20900px";
-                                    section11.style.backgroundColor = `rgba(0,0,0,${
-                                     Math.min((scrollY - 21000) / 500, 1)
-                                    })`;
+                                    section11.style.backgroundColor = `rgba(0,0,0,${Math.min(
+                                      (scrollY - 21000) / 500,
+                                      1
+                                    )})`;
 
                                     // if (scrollY >= 21000) {
 

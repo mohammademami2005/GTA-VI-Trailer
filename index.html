@@ -30,11 +30,61 @@
           id="img1"
         />
         <img
-        id="playSvg"
+          id="playSvg"
           src="public/play-circle.svg"
           alt=""
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-32"
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32"
         />
+        <div
+          id="whatchTrailer"
+          class="absolute bottom-[12%] left-1/2 transform -translate-x-1/2"
+          style="opacity: 1"
+        >
+          <svg
+            aria-hidden="true"
+            fill="none"
+            width="120"
+            height="70"
+            viewBox="0 0 199 132"
+            xmlns="http://www.w3.org/2000/svg"
+            class="_1jyak14k"
+            focusable="false"
+          >
+            <path
+              d="M26.4874 45.0876L6.73309 4.22697H41.7481L59.9601 43.9604L60.4792 45.0876H67.1233L67.6423 43.9753L85.9433 4.22697H120.973L101.189 45.0876H105.876L127.706 0H83.2293L63.8012 42.2103L44.4621 0H0L21.801 45.0876H26.4874Z"
+              fill="white"
+            ></path>
+            <path
+              d="M84.9965 78.5314L63.8184 122.299L42.6552 78.5314H37.9687L63.8184 131.999L89.6978 78.5314H84.9965Z"
+              fill="white"
+            ></path>
+            <path
+              d="M134.945 45.0876V4.12315H171.176V45.0876H175.299V0H130.822V45.0876H134.945Z"
+              fill="white"
+            ></path>
+            <path
+              d="M171.176 78.5314V127.876H134.945V78.5314H130.822V131.999H175.299V78.5314H171.176Z"
+              fill="white"
+            ></path>
+          </svg>
+          <!-- <span
+            style="
+              position: absolute;
+              border: 0;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              margin: -1px;
+              overflow: hidden;
+              clip: rect(0, 0, 0, 0);
+              white-space: nowrap;
+              word-wrap: normal;
+            "
+          ></span> -->
+          <span class="text-white absolute top-[18px] left-[5px]"
+            >Watch Trailer 2</span
+          >
+        </div>
       </div>
       <!-- hero section -->
 
@@ -114,7 +164,7 @@
       <!-- section 6 -->
       <div
         id="section6"
-        class="absolute top-[6000px] left-0 bg-red-600 z-400 w-full h-[100vh]"
+        class="absolute top-[6000px] left-0 bg-red-600 z-400 w-full h-screen"
       >
         <canvas id="videoCanvas2" class="w-full h-full"></canvas>
         <video
@@ -132,7 +182,7 @@
       <!-- section 4  -->
       <section
         id="section4"
-        class="hidden justify-between fixed top-full left-0 z-500 w-full h-screen flex-wrap gap-[1%] pl-[18%] pb-[10%]"
+        class="hidden justify-between fixed top-full left-0 z-500 w-full h-screen flex-wrap gap-[0.5%] pl-[18%] pb-[10%]"
       >
         <div class="w-[49%] h-screen flex flex-col justify-evenly items-center">
           <h2 class="text-[#fff9cb] text-6xl text-center w-3/4">Jason Duval</h2>
@@ -146,28 +196,27 @@
             be time to try something new.
           </p>
         </div>
-        <figure class="w-[49%] h-screen mt-[35vh]">
+        <figure class="w-[49%] h-screen mt-[35vh] cardHover">
           <img
             src="/public/img/Jason Duval/Jason_Duval_02.jpg"
             alt=""
             class="w-full h-full object-cover object-bottom-left"
           />
         </figure>
-        <figure class="w-[49%] h-screen">
+        <figure class="w-[49%] h-screen cardHover -translate-y-32">
           <img
             src="/public/img/Jason Duval/Jason_Duval_01.jpg"
             alt=""
             class="w-full h-full object-cover object-bottom-right"
           />
         </figure>
-        <figure class="w-1/4 h-3/6 mr-auto">
+        <figure class="w-1/4 h-3/6 mr-auto cardHover">
           <img
             src="/public/img/Jason Duval/Jason_Duval_06.jpg"
             alt=""
             class="w-full h-full object-cover object-center"
           />
         </figure>
-        <a href="/simple.html" class="">simple</a>
       </section>
 
       <!-- section 4  -->
@@ -192,41 +241,50 @@
       <!-- section 7  -->
       <section
         id="section7"
-        class="hidden justify-between absolute top-[13000px] left-0 z-500 w-full flex-wrap pb-[10%] bg-neutral-900"
+        class="hidden justify-between absolute top-[13000px] left-0 z-500 w-full h-[200vh] grid-rows-20 gap-4 grid-cols-8 bg-neutral-900"
       >
-        <div class="w-[49%] h-screen flex flex-col justify-evenly items-center">
-          <h2 class="text-[#fff9cb] text-6xl text-center w-full">
-            <q>If anything happens, I'm right behind you.</q>
-          </h2>
-          <h3 class="text-[#ffb0c4] text-4xl text-start w-1/2">
-            Another day in paradise, right?
-          </h3>
-        </div>
+        <h2
+          class="col-start-2 col-span-4 row-start-1 row-span-2 text-[#fff9cb] text-7xl text-start w-full"
+        >
+          <q>If anything happens, I'm right behind you.</q>
+        </h2>
+        <h3
+          class="text-[#ffb0c4] text-4xl text-center col-start-2 col-span-2 row-start-3 row-span-2 flex justify-center items-center"
+        >
+          Another day in paradise, right?
+        </h3>
         <p
-          class="text-3xl text-start text-white flex justify-center items-center w-1/4 mr-auto"
+          class="text-2xl text-start text-white flex justify-center items-center col-start-6 col-span-2 row-start-4 row-span-3"
         >
           Meeting Lucia could be the best or worst thing to ever happen to him.
           Jason knows how he'd like it to turn out but right now, it's hard to
           tell.
         </p>
-        <figure class="w-[49%] h-screen flex flex-wrap gap-[3%]">
+        <figure
+          class="flex flex-wrap gap-[3%] cardHover col-start-1 col-span-4 row-start-6 row-span-8"
+        >
           <img
             src="/public/img/Jason Duval/Jason_Duval_05.jpg"
             alt=""
             class="w-full h-full object-cover object-bottom-left"
           />
-
-          <img
-            src="/public/img/Jason Duval/Jason_Duval_03.jpg"
-            alt=""
-            class="w-[80%] h-[30%] object-cover ml-auto"
-          />
         </figure>
-        <figure class="w-[49%] h-screen mt-[35vh]">
+        <figure
+          class="col-start-5 row-start-7 row-span-11 col-span-3 cardHover"
+        >
           <img
             src="/public/img/Jason Duval/Jason_Duval_04.jpg"
             alt=""
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover object-left"
+          />
+        </figure>
+        <figure
+          class="col-start-2 col-span-3 row-start-14 row-span-4 cardHover"
+        >
+          <img
+            src="/public/img/Jason Duval/Jason_Duval_03.jpg"
+            alt=""
+            class="w-full h-full object-left object-cover"
           />
         </figure>
       </section>
@@ -235,7 +293,7 @@
       <!-- section 8 -->
       <figure
         id="section8"
-        class="w-full h-screen bg-red-50 fixed top-0 left-0 opacity-0 z-900"
+        class="w-full h-screen bg-red-50 fixed top-0 left-0 opacity-0 z-400"
       >
         <img
           src="public/img/Jason Duval/couple.png"
@@ -249,7 +307,7 @@
       <section
         class="grid grid-cols-12 grid-rows-16 gap-3 w-full h-[200vh] absolute top-[17000px] left-0 z-500"
       >
-        <figure class="col-span-6 col-start-1 row-start-3 row-span-7">
+        <figure class="col-span-6 col-start-1 row-start-3 row-span-7 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_01.jpg"
             alt=""
@@ -273,20 +331,22 @@
             out. Lucia’s learned her lesson — only smart moves from here.
           </p>
         </div>
-        <figure class="-400 row-start-10 row-span-7 col-start-3 col-span-4">
+        <figure
+          class="-400 row-start-10 row-span-7 col-start-3 col-span-4 cardHover"
+        >
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_05.jpg"
             alt=""
             class="w-full h-full bg-cover bg-right"
           />
         </figure>
-        <div class="row-start-9 row-span-4 col-start-7 col-end-12">
+        <figure class="row-start-9 row-span-4 col-start-7 col-end-12 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_02.jpg"
             alt=""
             class="w-full h-full bg-cover bg-right"
           />
-        </div>
+        </figure>
         <div
           class="row-start-13 row-span-4 col-start-7 col-span-4 flex justify-center items-center"
         >
@@ -340,7 +400,7 @@
           A life with Jason could be her way out.
         </p>
         <figure
-          class="col-start-2 col-span-2 row-end-13 row-start-6 bg-cyan-500"
+          class="col-start-2 col-span-2 row-end-13 row-start-6 cardHover"
         >
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_06.jpg"
@@ -349,15 +409,15 @@
           />
         </figure>
         <figure
-          class="col-start-4 col-span-3 row-start-5 row-span-7 bg-orange-700"
+          class="col-start-4 col-span-3 row-start-5 row-span-7 cardHover"
         >
           <img
-            src="/img/Lucia Caminos/Lucia_Caminos_04.jpg"
+            src="/img/Lucia Caminos/Lucia_Caminos_041.jpg"
             alt=""
             class="w-full h-full bg-cover bg-left"
           />
         </figure>
-        <figure class="col-start-4 col-span-2 row-span-3 bg-fuchsia-600">
+        <figure class="col-start-4 col-span-2 row-span-3 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_03.jpg"
             alt=""

@@ -3,6 +3,13 @@
   .an {
     animation: up 1.5s ease-in infinite;
   }
+  .cardHover {
+    @apply bg-[#fff9cb] hover:p-[1%] transition-all duration-1000  relative;
+    cursor: url('/public/img/search-zoom-in-1 (1).svg') 16 16, auto;
+  }
+  .customSvg {
+    @apply absolute right-5 bottom-5  w-10 rounded-lg text-[#fff9cb];
+  }
 }
 #videoCanvas {
   /* position: fixed; */
@@ -25,5 +32,13 @@
   100% {
     transform: translateY(0px) scale(1);
     fill: rgb(250, 209, 216);
+  }
+}
+
+.cardHover:hover {
+  > .customSvg {
+    background-color: #5A5A66;
+
+    transform: scale(1.4);
   }
 }
