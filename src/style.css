@@ -10,6 +10,9 @@
   .customSvg {
     @apply absolute right-5 bottom-5  w-10 rounded-lg text-[#fff9cb];
   }
+  .trailer-text{
+    animation: trailer-text 1.5s ease-in infinite;
+  }
 }
 #videoCanvas {
   /* position: fixed; */
@@ -35,10 +38,22 @@
   }
 }
 
+@keyframes trailer-text {
+  from{opacity: 0;}
+  to{opacity: 1 ;}
+}
+
+
+
 .cardHover:hover {
   > .customSvg {
     background-color: #5A5A66;
 
     transform: scale(1.4);
   }
+}
+
+body::selection{
+  color:rgb(61, 61, 61);
+  background-color: pink;
 }

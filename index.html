@@ -2,19 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gta-vi-trailer</title>
+    <title>Document</title>
   </head>
-
   <body class="scroll-smooth">
+    <!-- ------------------  header ---------------------------- -->
+    <header
+      class="w-screen fixed top-0 left-0 h-[8vh] flex justify-between items-center px-[5%] *:hover:fill-[#fff9cb] cursor-pointer z-100"
+    >
+      <svg
+        fill="white"
+        height="32"
+        width="32"
+        viewBox="0 0 46 35"
+        xmlns="http://www.w3.org/2000/svg"
+
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M46.2661 0.800781H34.7236V34.4008H46.2661V0.800781Z"
+          fill="inherit"
+        ></path>
+        <path
+          d="M33.9162 0.800781L17.3358 34.4008L0.776855 0.800781H12.3139L17.3332 11.5445L22.3766 0.800781H33.9162Z"
+          fill="inherit"
+        ></path>
+        <path
+          d="M46.9194 1.43945C47.0056 1.43945 47.0488 1.47492 47.0488 1.54585C47.0488 1.60496 47.0155 1.63872 46.9489 1.64712L47.0573 1.81154H46.9939L46.8905 1.65148H46.828V1.81154H46.769V1.43945H46.9192H46.9194ZM46.8959 1.60465C46.9317 1.60465 46.9565 1.59999 46.9698 1.59065C46.9831 1.58132 46.9898 1.56561 46.9898 1.54336C46.9898 1.50541 46.9631 1.48628 46.9099 1.48628H46.8282V1.60465H46.8959Z"
+          fill="inherit"
+        ></path>
+        <path
+          d="M46.8961 1.94775C46.7154 1.94775 46.5684 1.80355 46.5684 1.62622C46.5684 1.44889 46.7154 1.30469 46.8961 1.30469C47.0769 1.30469 47.2239 1.44889 47.2239 1.62622C47.2239 1.80355 47.0769 1.94775 46.8961 1.94775ZM46.8961 1.35509C46.7437 1.35509 46.6196 1.47673 46.6196 1.62638C46.6196 1.77602 46.7436 1.89767 46.8961 1.89767C47.0487 1.89767 47.1727 1.77602 47.1727 1.62638C47.1727 1.47673 47.0487 1.35509 46.8961 1.35509Z"
+          fill="inherit"
+        ></path>
+      </svg>
+      <!-- ///////////////////////////// -->
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_4418_6187)">
+          <path
+            d="M3 7H21"
+            stroke="#fff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+          <path
+            opacity="0.34"
+            d="M3 12H21"
+            stroke="#fff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+          <path
+            d="M3 17H21"
+            stroke="#fff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_4418_6187">
+            <rect width="24" height="24" fill="none" />
+          </clipPath>
+        </defs>
+      </svg>
+    </header>
+    <!-- ------------------  header ---------------------------- -->
+
+    <!-- ------------------------------  main------------------------------  -->
     <main
       id="app"
-      class="bg-black w-screen h-[5000vh] overflow-x-hidden scroll-smooth"
+      class="bg-black w-full h-[5000vh] overflow-x-hidden scroll-smooth"
     >
-      <!-- hero section -->
-      <div
-        id="hero"
+      <!----------- hero section ------->
+      <section
+        id="heroSection"
         class="w-screen h-screen fixed top-0 left-0 overflow-x-hidden transform scale-100"
         style="transform: scale(1.2)"
       >
@@ -27,7 +95,7 @@
           src="public/img/grand-theft-aut.png"
           alt="image"
           class="w-full h-full object-cover absolute top-0 left-0 z-10"
-          id="img1"
+          id="gtaText"
         />
         <img
           id="playSvg"
@@ -67,31 +135,17 @@
               fill="white"
             ></path>
           </svg>
-          <!-- <span
-            style="
-              position: absolute;
-              border: 0;
-              width: 1px;
-              height: 1px;
-              padding: 0;
-              margin: -1px;
-              overflow: hidden;
-              clip: rect(0, 0, 0, 0);
-              white-space: nowrap;
-              word-wrap: normal;
-            "
-          ></span> -->
-          <span class="text-white absolute top-[18px] left-[5px]"
+          <span class="text-white absolute top-[18px] left-[5px] trailer-text"
             >Watch Trailer 2</span
           >
         </div>
-      </div>
-      <!-- hero section -->
+      </section>
+      <!----------- hero section ------------>
 
-      <!-- logo section -->
+      <!-------------------- logo section -------------------->
       <div
         id="logoText"
-        class="w-screen h-screen justify-center items-center fixed top-0 left-0 z-20 hidden"
+        class="w-screen h-screen justify-center items-center fixed top-0 left-0 z-10 hidden"
       >
         <img
           src="/public/img/VIstack.bc737d6e.svg"
@@ -100,19 +154,16 @@
           id="logoImg"
         />
       </div>
-      <!-- logo section -->
-      <!-- section 2  -->
+      <!-------------------- logo section -------------------->
+
+      <!----------------- coming  section  ----------------->
       <div
-        class="w-screen h-screen hidden flex-col justify-center items-center z-30 mt-[3000px]"
-        id="section2"
+        class="w-full h-screen opacity-40 hidden flex-col justify-center items-center z-30 fixed top-40 left-0"
+        id="coming-section"
       >
-        <img
-          src="/img/logoVi.webp"
-          alt=""
-          class="opacity-0 w-52 h-52 object-contain"
-        />
+        <img src="/img/logoVi.webp" alt="" class="w-52 h-52 object-contain" />
         <h2
-          class="text-white text-9xl opacity-0 w-[80%] text-center"
+          class="text-white text-9xl w-[80%] text-center"
           style="
             background: linear-gradient(90deg, #ff4d4d, #ff00ff, #00eaff);
             -webkit-background-clip: text;
@@ -124,11 +175,12 @@
           2026
         </h2>
       </div>
-      <!-- section 2  -->
-      <!-- section 3 -->
+      <!----------------- coming  section --------------- -->
+
+      <!-- ------------------------------  vice city section ------------------------------ -->
       <div
-        class="w-full h-full hidden left-0 top-0 justify-center items-center flex-col z-50"
-        id="section3"
+        class="w-full h-full hidden left-0 top-0 justify-center items-center flex-col gap-8 z-10"
+        id="viceCitySection"
       >
         <h2
           class="text-9xl w-[60%] opacity-0"
@@ -155,20 +207,20 @@
           each other more than ever if they want to make it out alive.
         </h3>
         <div
-          class="w-full h-full absolute top-0 left-0 z-50 bg-neutral-900"
-          id="section3Circle2"
+          class="w-full h-full absolute top-0 left-0 z-10 shadow-2xl blur-3xl"
+          id="section3Circle"
         ></div>
       </div>
-      <!-- section 3 -->
+      <!-- ------------------------------  vice city section ------------------------------ -->
 
-      <!-- section 6 -->
+      <!-- ------------------------   jason duval video section ------------------------  -->
       <div
-        id="section6"
-        class="absolute top-[6000px] left-0 bg-red-600 z-400 w-full h-screen"
+        id="jasonVideoSection"
+        class="absolute top-[7000px] left-0 bg-red-600 z-20 w-full h-screen"
       >
-        <canvas id="videoCanvas2" class="w-full h-full"></canvas>
+        <canvas id="videoCanvas" class="w-full h-full"></canvas>
         <video
-          id="JasonVideo2"
+          id="JasonVideo"
           src="/public/video/768.db8d79e401230d4c2717ad2e0b5b5185 (1).mp4"
           preload="auto"
           muted
@@ -177,12 +229,12 @@
         ></video>
       </div>
 
-      <!--section 6 -->
+      <!-- ------------------------   jason duval video section ------------------------  -->
 
-      <!-- section 4  -->
+      <!-- ----------------jason duval photos section ---------------- -->
       <section
-        id="section4"
-        class="hidden justify-between fixed top-full left-0 z-500 w-full h-screen flex-wrap gap-[0.5%] pl-[18%] pb-[10%]"
+        id="JasonDuval"
+        class="hidden justify-between absolute top-[10500px] left-0 z-30 w-full h-screen flex-wrap gap-[0.5%] pl-[18%] pb-[10%]"
       >
         <div class="w-[49%] h-screen flex flex-col justify-evenly items-center">
           <h2 class="text-[#fff9cb] text-6xl text-center w-3/4">Jason Duval</h2>
@@ -218,17 +270,16 @@
           />
         </figure>
       </section>
+      <!-- ----------------jason duval photos section ---------------- -->
 
-      <!-- section 4  -->
-
-      <!-- section 5 -->
+      <!-- ------------------------   jason duval  video 2 section ------------------------  -->
       <div
-        id="section5"
-        class="absolute top-[15000px] left-0 bg-red-600 z-300 w-full h-full"
+        id="jasonVideoSection2"
+        class="hidden fixed top-0 left-0 z-20 w-full h-full"
       >
-        <canvas id="videoCanvas" class="w-full h-full"></canvas>
+        <canvas id="videoCanvas2" class="w-full h-full"></canvas>
         <video
-          id="JasonVideo"
+          id="JasonVideo2"
           src="/public/768.11d06cf5cdc0ab989c76136230dde4e3.mp4"
           preload="auto"
           muted
@@ -236,12 +287,12 @@
           style="position: absolute; top: -9999px; left: -9999px"
         ></video>
       </div>
-      <!-- section 5 -->
+      <!-- ------------------------   jason duval  video 2 section ------------------------  -->
 
-      <!-- section 7  -->
+      <!-- =================================== jason duval photos 2=================================== -->
       <section
-        id="section7"
-        class="hidden justify-between absolute top-[13000px] left-0 z-500 w-full h-[200vh] grid-rows-20 gap-4 grid-cols-8 bg-neutral-900"
+        id="JasonDuval2"
+        class="hidden justify-between absolute top-[20000px] left-0 z-30 w-full h-[200vh] grid-rows-20 gap-4 grid-cols-8 bg-stone-900"
       >
         <h2
           class="col-start-2 col-span-4 row-start-1 row-span-2 text-[#fff9cb] text-7xl text-start w-full"
@@ -288,12 +339,12 @@
           />
         </figure>
       </section>
-      <!-- section 7  -->
+      <!-- =================================== jason duval photos 2=================================== -->
 
-      <!-- section 8 -->
+      <!-- ------------------------------- couple image------------------------------- -->
       <figure
         id="section8"
-        class="w-full h-screen bg-red-50 fixed top-0 left-0 opacity-0 z-400"
+        class="w-full h-screen bg-red-50 fixed top-0 left-0 opacity-0 z-30 hidden"
       >
         <img
           src="public/img/Jason Duval/couple.png"
@@ -301,11 +352,12 @@
           class="w-full h-full object-cover"
         />
       </figure>
-      <!-- section 8 -->
+      <!-- ------------------------------- couple image------------------------------- -->
 
-      <!-- lusia section 9 -->
+      <!-- ------------------------------  lucia Caminos section ------------------------------ -->
       <section
-        class="grid grid-cols-12 grid-rows-16 gap-3 w-full h-[200vh] absolute top-[17000px] left-0 z-500"
+        class="grid-cols-12 grid-rows-16 gap-3 w-full h-[200vh] absolute top-[25000px] left-0 z-40 hidden"
+        id="lucia"
       >
         <figure class="col-span-6 col-start-1 row-start-3 row-span-7 cardHover">
           <img
@@ -359,12 +411,12 @@
           </p>
         </div>
       </section>
-      <!-- lusia section 9 -->
+      <!-- ------------------------------  lucia Caminos section ------------------------------ -->
 
-      <!-- section 10 video  -->
+      <!-- ------------------------------  lucia Caminos video section ------------------------------ -->
       <section
-        id="section10"
-        class="absolute top-[18600px] left-0 z-400 w-full h-[100vh]"
+        id="luciaVideo"
+        class="absolute top-[27000px] left-0 z-40 w-full h-[100vh]"
       >
         <canvas id="videoCanvas3" class="w-full h-full"></canvas>
         <video
@@ -376,12 +428,12 @@
           style="position: absolute; top: -9999px; left: -9999px"
         ></video>
       </section>
-      <!-- section 10 video  -->
+      <!-- ------------------------------  lucia Caminos video section ------------------------------ -->
 
-      <!-- section 11 -->
+      <!-- ------------------------------  lucia Caminos photos section ------------------------------ -->
       <section
         id="section11"
-        class="grid gap-2 grid-cols-6 grid-rows-15 w-full h-[200vh] absolute top-[20300px] left-0 z-500"
+        class="grid gap-2 grid-cols-6 grid-rows-15 w-full h-[200vh] absolute top-[29000px] left-0 z-50"
       >
         <h2
           class="col-start-1 col-span-12 row-start-1 row-span-2 text-[#fff9cb] text-6xl w-full text-center p-[2%]"
@@ -399,18 +451,14 @@
         >
           A life with Jason could be her way out.
         </p>
-        <figure
-          class="col-start-2 col-span-2 row-end-13 row-start-6 cardHover"
-        >
+        <figure class="col-start-2 col-span-2 row-end-13 row-start-6 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_06.jpg"
             alt=""
             class="w-full h-full bg-cover bg-center"
           />
         </figure>
-        <figure
-          class="col-start-4 col-span-3 row-start-5 row-span-7 cardHover"
-        >
+        <figure class="col-start-4 col-span-3 row-start-5 row-span-7 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_041.jpg"
             alt=""
@@ -425,7 +473,13 @@
           />
         </figure>
       </section>
-      <!-- section 11 -->
+      <!-- ------------------------------  lucia Caminos photos section ------------------------------ -->
+
+     <!-- -----------------------------  real dimez -----------------------------  -->
+      <section class="w-full h-[300vh] absolute top-[34000px] left-0 hidden bg-[url(/src/assets/real.jpg)]"></section>
+     <!-- -----------------------------  real dimez -----------------------------  -->
+
+      <!-- ---------------------------- arrow svg ------------------------ -->
       <svg
         width="34"
         height="14"
@@ -433,7 +487,7 @@
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         focusable="false"
-        class="fixed bottom-5 left-1/2 fill-red-600 an z-99999999999"
+        class="fixed bottom-5 left-1/2 fill-red-600 an z-100"
       >
         <path
           fill-rule="evenodd"
@@ -442,7 +496,10 @@
           fill="inherit"
         ></path>
       </svg>
+      <!-- ---------------------------- arrow svg ------------------------ -->
     </main>
+    <!-- ------------------------------  main------------------------------  -->
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
