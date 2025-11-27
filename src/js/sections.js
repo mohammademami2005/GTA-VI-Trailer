@@ -1,4 +1,4 @@
-export function initSections(video1, video2, video3Module) {
+export function initSections(video1, video2, video3Module, video4) {
   // ---------------selections---------------
   const comingSection = document.querySelector("#coming-section");
   const viceCitySection = document.querySelector("#viceCitySection");
@@ -11,6 +11,10 @@ export function initSections(video1, video2, video3Module) {
   const luciaSection = document.querySelector("#lucia");
   const luciaVideoSection = document.querySelector("#luciaVideo");
   const section11 = document.querySelector("#section11");
+  const realDimez = document.querySelector("#realDimez");
+  const realText = document.querySelector('#realText');
+  const footer = document.querySelector('footer')
+  const footerContent = document.querySelector('#footerContent')
 
   // --------------sections array--------------
   const sections = [
@@ -191,26 +195,66 @@ export function initSections(video1, video2, video3Module) {
       },
       onProgress: (p) => {
         section11.style.backgroundColor = `rgba(0,0,0,${p})`;
-        section11.style.top = `${76 - (p*200)}%`
+        section11.style.top = `${76 - p * 200}%`;
       },
     },
     {
-      el: section11,
-      start: 28500,
-      end: 34000,
+      el: realDimez,
+      start: 33000,
+      end: 38500,
       onEnter: () => {
-        section11.style.position = "fixed";
-        section11.style.top = "76%";
+        realDimez.classList.replace("hidden", "block");
       },
       onExit: () => {
-        section11.style.position = "absolute";
-        section11.style.top = "29000px";
+        realDimez.classList.replace("block", "hidden");
       },
       onProgress: (p) => {
-        section11.style.backgroundColor = `rgba(0,0,0,${p})`;
-        section11.style.top = `${76 - (p*200)}%`
+        if (window.scrollY >= 34000) {
+          const progress = Math.min((window.scrollY - 34000) / 3000, 1);
+
+          // رنگ شروع: #313953
+          const start = { r: 49, g: 57, b: 83 };
+
+          // رنگ پایان: #0f1119
+          const end = { r: 15, g: 17, b: 25 };
+
+          const r = start.r + (end.r - start.r) * progress;
+          const g = start.g + (end.g - start.g) * progress;
+          const b = start.b + (end.b - start.b) * progress;
+
+          realDimez.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+          if (window.scrollY > 35200) {
+            realDimez.classList.replace("absolute", "fixed");
+            realDimez.style.top = "-1390px";
+            const newProgres = Math.min((window.scrollY - 35200) / 400, 1);
+            video4.setTargetTime(newProgres);
+              if(newProgres >= 0.9){
+                const newProgres2 = Math.min((window.scrollY - 35576) / 20 , 55)
+                realText.style.top= 100 - newProgres2 + '%';
+
+                if(window.scrollY >= 36676){
+                  realDimez.classList.replace('fixed' , 'absolute')
+                  realDimez.style.top="35319px"
+                }
+              }
+          } else {
+            realDimez.classList.replace("fixed", "absolute");
+            realDimez.style.top = "33860px";
+          }
+        }
       },
     },
+    {
+      el:footer,
+      start:38500,
+      end:45000,
+      onEnter:()=>{footer.classList.replace('hidden','flex')},
+      onExit:()=>{footer.classList.replace('flex','hidden')},
+      onProgress:(p)=>{
+        footerContent.style.opacity=p
+      }
+    }
   ];
 
   //  ---------------------- handle function ----------------------

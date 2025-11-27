@@ -4,7 +4,7 @@ export function ImageModal() {
   cards.forEach((card) => {
     // ساخت SVG آیکون بزرگ‌نمایی
     const icon = document.createElement("img");
-    icon.src = "/img/maximize-2.svg";
+    icon.src = "/img/maximize-4.svg";
     icon.classList.add("customSvg");
     card.appendChild(icon);
 

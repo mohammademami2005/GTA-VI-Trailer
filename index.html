@@ -16,7 +16,6 @@
         width="32"
         viewBox="0 0 46 35"
         xmlns="http://www.w3.org/2000/svg"
-
         aria-hidden="true"
         focusable="false"
       >
@@ -78,7 +77,7 @@
     <!-- ------------------------------  main------------------------------  -->
     <main
       id="app"
-      class="bg-black w-full h-[5000vh] overflow-x-hidden scroll-smooth"
+      class="bg-black w-full h-[6000vh] overflow-x-hidden scroll-smooth"
     >
       <!----------- hero section ------->
       <section
@@ -475,9 +474,107 @@
       </section>
       <!-- ------------------------------  lucia Caminos photos section ------------------------------ -->
 
-     <!-- -----------------------------  real dimez -----------------------------  -->
-      <section class="w-full h-[300vh] absolute top-[34000px] left-0 hidden bg-[url(/src/assets/real.jpg)]"></section>
-     <!-- -----------------------------  real dimez -----------------------------  -->
+      <!-- -----------------------------  real dimez -----------------------------  -->
+      <section
+        id="realDimez"
+        class="w-full h-[1500vh] absolute hidden top-[34000px] left-0 bg-[url(/src/assets/real.jpg)] bg-top bg-contain bg-no-repeat bg-blue-400 z-50"
+      >
+        <div
+          class="w-full h-screen pr-[50%] flex justify-center items-center flex-col *:text-start *:w-1/2 gap-5"
+        >
+          <h2 class="text-6xl uppercase text-[#fff9cb]">Real Dimez</h2>
+          <h3 class="text-yellow-200 text-4xl text-start">
+            Viral videos. <br />
+            Viral hooks.
+          </h3>
+          <p class="text-3xl text-white">
+            Bae-Luxe and Roxy aka Real Dimez have been friends since high school
+            — girls with the savvy to turn their time shaking down local dealers
+            into cold, hard cash via spicy rap tracks and a relentless social
+            media presence.
+          </p>
+        </div>
+        <div class="grid grid-rows-20 grid-cols-10 w-full h-[200vh] gap-2">
+          <figure
+            class="col-start-3 col-span-3 row-start-2 row-span-8 cardHover"
+          >
+            <img
+              src="/public/img/Real Dimez/Real_Dimez_01.jpg"
+              alt=""
+              class="w-full h-full object-cover object-center"
+            />
+          </figure>
+          <figure
+            class="col-start-6 col-span-5 row-start-1 row-span-10 cardHover"
+          >
+            <img
+              src="/public/img/Real Dimez/Real_Dimez_03.jpg"
+              alt=""
+              class="w-full h-full object-cover object-center"
+            />
+          </figure>
+          <div
+            class="col-start-1 col-span-5 row-start-10 row-span-10 bg-red-500"
+          >
+            <div id="realDimezVideoSection" class="w-full h-full">
+              <canvas id="realDimezCanvas" class="w-full h-full"></canvas>
+              <video
+                id="realDimezVideo"
+                src="/public/768.9110e22189d9f3e2d495ed879ad70edd.mp4"
+                preload="auto"
+                muted
+                playsinline
+                style="position: absolute; top: -9999px; left: -9999px"
+              ></video>
+            </div>
+          </div>
+          <div class="col-start-6 col-span-5 row-start-11 row-span-9 relative">
+            <div
+              class="flex justify-center items-center absolute top-full left-0"
+              id="realText"
+            >
+              <h3 class="text-yellow-200 text-5xl text-start w-3/5">
+                <q>All my dimes in this club. Meet my twin, make it a dub. </q>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- 000000000000000000000000000000000000000000000000000000000000000 -->
+        <div class="gap-2.5 w-full h-[300vh] grid grid-rows-10 grid-cols-10">
+          <figure
+            class="col-start-2 col-span-4 row-start-1 row-span-4 cardHover"
+          >
+            <img
+              src="/public/img/Real Dimez/Real_Dimez_02.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </figure>
+          <figure
+            class="col-start-6 col-span-3 row-start-2 row-span-2 cardHover"
+          >
+            <img
+              src="/public/img/Real Dimez/Real_Dimez_04.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </figure>
+          <div
+            class="row-start-4 row-span-3 col-start-6 col-span-4 flex flex-col justify-evenly items-center *:text-start"
+          >
+            <h3 class="text-yellow-200 text-5xl text-start w-3/5">
+              One hit away from fame.
+            </h3>
+            <p class="text-3xl text-white w-3/4">
+              An early hit single with local rapper DWNPLY took Real Dimez to
+              new heights. Now, after five years and a whole lot of trouble,
+              they’re signed to Only Raw Records, hoping lightning can strike
+              twice.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- -----------------------------  real dimez -----------------------------  -->
 
       <!-- ---------------------------- arrow svg ------------------------ -->
       <svg
@@ -487,7 +584,7 @@
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         focusable="false"
-        class="fixed bottom-5 left-1/2 fill-red-600 an z-100"
+        class="fixed bottom-5 left-1/2 an z-100"
       >
         <path
           fill-rule="evenodd"
@@ -499,6 +596,29 @@
       <!-- ---------------------------- arrow svg ------------------------ -->
     </main>
     <!-- ------------------------------  main------------------------------  -->
+
+    <!----------------- coming  section footer  ----------------->
+    <footer class="w-full h-screen hidden  fixed top-0 left-0 z-60 bg-black">
+      <div
+        class="w-full h-full opacity-15 flex flex-col justify-center items-center "
+        id="footerContent"
+      >
+        <img src="/img/logoVi.webp" alt="" class="w-52 h-52 object-contain" />
+        <h2
+          class="text-white text-9xl w-[80%] text-center"
+          style="
+            background: linear-gradient(90deg, #ff4d4d, #ff00ff, #00eaff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        >
+          Coming <br />
+          November 19 <br />
+          2026
+        </h2>
+      </div>
+    </footer>
+    <!----------------- coming  section footer --------------- -->
 
     <script type="module" src="/src/main.js"></script>
   </body>

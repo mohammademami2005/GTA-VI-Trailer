@@ -1,4 +1,10 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "SPFont";
+  src: url("/fonts/bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 @layer utilities {
   .an {
     animation: up 1.5s ease-in infinite;
@@ -8,7 +14,9 @@
     cursor: url('/public/img/search-zoom-in-1 (1).svg') 16 16, auto;
   }
   .customSvg {
-    @apply absolute right-5 bottom-5  w-10 rounded-lg text-[#fff9cb];
+    @apply absolute right-5 bottom-5 bg-stone-800  p-2  w-10 rounded-lg text-[#fff9cb];
+    border-radius: 50%;
+
   }
   .trailer-text{
     animation: trailer-text 1.5s ease-in infinite;
@@ -47,12 +55,15 @@
 
 .cardHover:hover {
   > .customSvg {
-    background-color: #5A5A66;
+    /* background-color: #5A5A66; */
 
     transform: scale(1.4);
+
   }
 }
-
+body{
+   font-family: "SPFont" !important;
+}
 body::selection{
   color:rgb(61, 61, 61);
   background-color: pink;

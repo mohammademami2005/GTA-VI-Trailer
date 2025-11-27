@@ -15,8 +15,9 @@ const logoSection = initLogo();
 const video1 = initVideo(document.querySelector("#JasonVideo"), "videoCanvas");
 const video2 = initVideo(document.querySelector("#JasonVideo2"), "videoCanvas2")
 const video3 = initVideo(document.querySelector("#JasonVideo3"), "videoCanvas3")
+const video4 = initVideo(document.querySelector('#realDimezVideo'),'realDimezCanvas')
 // const sectionsModule = initSections(video1);
-const sections = initSections(video1 , video2 , video3);
+const sections = initSections(video1 , video2 , video3,video4);
 
 
 // ------------------------------- scroll ------------------------------------
