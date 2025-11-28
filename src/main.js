@@ -23,7 +23,6 @@ const sections = initSections(video1 , video2 , video3,video4);
 // ------------------------------- scroll ------------------------------------
 window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
-    console.log(scrollY);
 
     heroSection.update(scrollY);
     logoSection.update(scrollY);

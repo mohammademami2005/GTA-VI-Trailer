@@ -57,7 +57,6 @@ export function initSections(video1, video2, video3Module, video4) {
       },
       onProgress: (p) => {
         const progress2 = Math.min((window.scrollY - 5000) / 400, 1);
-        console.log("progress2", progress2);
         viceCitySection.querySelector("h2").style.opacity = progress2;
         viceCitySection.querySelector("h3").style.opacity = progress2;
         viceCitySection.querySelector(
@@ -67,9 +66,11 @@ export function initSections(video1, video2, video3Module, video4) {
           "h3"
         ).style.transform = `scale(${progress2})`;
         viceCitySection_Circle.style.top = `${p * -100}%`;
-        if (progress2 === 1) {
-          viceCitySection.style.opacity =
-            1 - Math.min((window.scrollY - 5400) / 400, 1);
+
+        if(p >= 0.9){
+          viceCitySection_Circle.style.display = "none";
+        }else{
+          viceCitySection_Circle.style.display = "block";
         }
       },
     },
