@@ -11,7 +11,7 @@
   }
   .cardHover {
     @apply bg-[#fff9cb] hover:p-[1%] transition-all duration-1000  relative;
-    cursor: url('/public/img/search-zoom-in-1 (1).svg') 16 16, auto;
+    cursor: url('/img/search-zoom-in-1 (1).svg') 16 16, auto;
   }
   .customSvg {
     @apply absolute right-5 bottom-5 bg-stone-800  p-2  w-10 rounded-lg text-[#fff9cb];
