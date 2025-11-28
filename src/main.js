@@ -31,3 +31,41 @@ window.addEventListener("scroll", () => {
     sections.updateSections(scrollY);
 
 })
+
+
+let scrollTarget = 0;
+let scrollCurrent = 0;
+let isScrolling = false;
+const ease = 0.03; // ← این رو هرچقدر کمتر کنی نرم‌تر میشه
+
+function smoothScroll() {
+  scrollCurrent += (scrollTarget - scrollCurrent) * ease;
+
+  window.scrollTo(0, scrollCurrent);
+
+  if (Math.abs(scrollCurrent - scrollTarget) > 0.1) {
+    requestAnimationFrame(smoothScroll);
+  } else {
+    isScrolling = false;
+  }
+}
+
+window.addEventListener(
+  "wheel",
+  (e) => {
+    e.preventDefault();
+
+    scrollTarget += e.deltaY;
+    scrollTarget = Math.max(0, scrollTarget);
+    scrollTarget = Math.min(
+      document.body.scrollHeight - window.innerHeight,
+      scrollTarget
+    );
+
+    if (!isScrolling) {
+      isScrolling = true;
+      requestAnimationFrame(smoothScroll);
+    }
+  },
+  { passive: false }
+);

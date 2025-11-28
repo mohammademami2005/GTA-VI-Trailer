@@ -162,7 +162,7 @@
       >
         <img src="/img/logoVi.webp" alt="" class="w-52 h-52 object-contain" />
         <h2
-          class="text-white text-9xl w-[80%] text-center"
+          class="text-white text-4xl lg:text-9xl w-[80%] text-center"
           style="
             background: linear-gradient(90deg, #ff4d4d, #ff00ff, #00eaff);
             -webkit-background-clip: text;
@@ -182,7 +182,7 @@
         id="viceCitySection"
       >
         <h2
-          class="text-9xl w-[60%] opacity-0"
+          class="text-2xl lg:text-8xl w-[90%] lg:w-[60%] opacity-0"
           style="
             background: linear-gradient(90deg, #ff4d4d, #ff00ff, #00eaff);
             -webkit-background-clip: text;
@@ -192,7 +192,7 @@
           Vice City, USA.
         </h2>
         <h3
-          class="text-5xl w-[70%] text-justify-center opacity-0"
+          class="text-2xl lg:text-5xl w-[90%] lg:w-[70%] text-justify-center opacity-0"
           style="
             background: linear-gradient(180deg, #ff4d4d, #ff00ff, #00eaff);
             -webkit-background-clip: text;
@@ -215,7 +215,7 @@
       <!-- ------------------------   jason duval video section ------------------------  -->
       <div
         id="jasonVideoSection"
-        class="absolute top-[7000px] left-0 bg-red-600 z-20 w-full h-screen"
+        class="absolute top-[7000px] left-0 z-20 w-full h-screen"
       >
         <canvas id="videoCanvas" class="w-full h-full"></canvas>
         <video
@@ -233,35 +233,43 @@
       <!-- ----------------jason duval photos section ---------------- -->
       <section
         id="JasonDuval"
-        class="hidden justify-between absolute top-[10500px] left-0 z-30 w-full h-screen flex-wrap gap-[0.5%] pl-[18%] pb-[10%]"
+        class="hidden lg:justify-between absolute top-[10500px] left-0 z-30 w-full h-screen flex-wrap gap-[0.5%] lg:pl-[18%] pb-[10%]"
       >
-        <div class="w-[49%] h-screen flex flex-col justify-evenly items-center">
-          <h2 class="text-[#fff9cb] text-6xl text-center w-3/4">Jason Duval</h2>
-          <h3 class="text-[#ffb0c4] text-4xl text-start w-3/4">
+        <div
+          class="w-full lg:w-[49%] h-screen flex flex-col flex-wrap lg:flex-nowrap justify-evenly items-center"
+        >
+          <h2
+            class="text-[#fff9cb] text-5xl lg:text-6xl text-center w-full lg:w-3/4"
+          >
+            Jason Duval
+          </h2>
+          <h3
+            class="text-[#ffb0c4] text-3xl lg:text-4xl text-start w-full lg:w-3/4"
+          >
             Jason wants an easy life, but things just keep getting harder.
           </h3>
-          <p class="text-3xl text-start text-white w-3/4">
+          <p class="text-3xl text-start text-white w-full lg:w-3/4">
             Jason grew up around grifters and crooks. After a stint in the Army
             trying to shake off his troubled teens, he found himself in the Keys
             doing what he knows best, working for local drug runners. It might
             be time to try something new.
           </p>
         </div>
-        <figure class="w-[49%] h-screen mt-[35vh] cardHover">
+        <figure class="w-full lg:w-[49%] h-screen lg:mt-[35vh] cardHover">
           <img
             src="/public/img/Jason Duval/Jason_Duval_02.jpg"
             alt=""
-            class="w-full h-full object-cover object-bottom-left"
+            class="w-full h-full object-cover lg:object-bottom-left"
           />
         </figure>
-        <figure class="w-[49%] h-screen cardHover -translate-y-32">
+        <figure class="w-full lg:w-[49%] h-screen cardHover lg:-translate-y-32">
           <img
             src="/public/img/Jason Duval/Jason_Duval_01.jpg"
             alt=""
             class="w-full h-full object-cover object-bottom-right"
           />
         </figure>
-        <figure class="w-1/4 h-3/6 mr-auto cardHover">
+        <figure class="w-full lg:w-1/4 h-3/6 mr-auto cardHover">
           <img
             src="/public/img/Jason Duval/Jason_Duval_06.jpg"
             alt=""
@@ -294,24 +302,24 @@
         class="hidden justify-between absolute top-[20000px] left-0 z-30 w-full h-[200vh] grid-rows-20 gap-4 grid-cols-8 bg-stone-900"
       >
         <h2
-          class="col-start-2 col-span-4 row-start-1 row-span-2 text-[#fff9cb] text-7xl text-start w-full"
+          class="col-start-1 lg:col-start-2 col-span-8 lg:col-span-4 row-start-1 row-span-2 text-[#fff9cb] text-3xl lg:text-7xl text-center lg:text-start w-full"
         >
           <q>If anything happens, I'm right behind you.</q>
         </h2>
         <h3
-          class="text-[#ffb0c4] text-4xl text-center col-start-2 col-span-2 row-start-3 row-span-2 flex justify-center items-center"
+          class="text-[#ffb0c4] text-3xl lg:text-4xl text-center col-start-1 lg:col-start-2 col-span-8 lg:col-span-2 row-start-3 row-span-1 flex justify-center items-center"
         >
           Another day in paradise, right?
         </h3>
         <p
-          class="text-2xl text-start text-white flex justify-center items-center col-start-6 col-span-2 row-start-4 row-span-3"
+          class="text-2xl text-start text-white flex justify-center items-center col-start-1 lg:col-start-6 col-span-8 lg:col-span-2 row-start-4 row-span-2 lg:row-span-3"
         >
           Meeting Lucia could be the best or worst thing to ever happen to him.
           Jason knows how he'd like it to turn out but right now, it's hard to
           tell.
         </p>
         <figure
-          class="flex flex-wrap gap-[3%] cardHover col-start-1 col-span-4 row-start-6 row-span-8"
+          class="flex flex-wrap gap-[3%] cardHover col-start-1 col-span-8 lg:col-span-4 row-start-6 row-span-5 lg:row-span-8"
         >
           <img
             src="/public/img/Jason Duval/Jason_Duval_05.jpg"
@@ -320,7 +328,7 @@
           />
         </figure>
         <figure
-          class="col-start-5 row-start-7 row-span-11 col-span-3 cardHover"
+          class="col-start-1 lg:col-start-5 row-start-11 lg:row-start-7 row-span-6 lg:row-span-11 col-span-8 lg:col-span-3 cardHover"
         >
           <img
             src="/public/img/Jason Duval/Jason_Duval_04.jpg"
@@ -329,7 +337,7 @@
           />
         </figure>
         <figure
-          class="col-start-2 col-span-3 row-start-14 row-span-4 cardHover"
+          class="col-start-1 lg:col-start-2 col-span-8 lg:col-span-3 row-start-17 lg:row-start-14 row-span-4 cardHover"
         >
           <img
             src="/public/img/Jason Duval/Jason_Duval_03.jpg"
@@ -343,7 +351,7 @@
       <!-- ------------------------------- couple image------------------------------- -->
       <figure
         id="section8"
-        class="w-full h-screen bg-red-50 fixed top-0 left-0 opacity-0 z-30 hidden"
+        class="w-full h-screen  fixed top-0 left-0 opacity-0 z-30 hidden"
       >
         <img
           src="public/img/Jason Duval/couple.png"
@@ -358,7 +366,7 @@
         class="grid-cols-12 grid-rows-16 gap-3 w-full h-[200vh] absolute top-[25000px] left-0 z-40 hidden"
         id="lucia"
       >
-        <figure class="col-span-6 col-start-1 row-start-3 row-span-7 cardHover">
+        <figure class="col-span-12 lg:col-span-6 col-start-1 row-start-6 lg:row-start-3 row-span-3 lg:row-span-7 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_01.jpg"
             alt=""
@@ -366,16 +374,16 @@
           />
         </figure>
         <div
-          class="row-start-1 row-span-8 col-start-7 col-span-12 flex justify-start gap-5 items-center flex-col"
+          class="row-start-1 row-span-5  lg:row-span-8 col-start-1 lg:col-start-7 col-span-12 flex justify-start gap-5 items-center flex-col"
         >
-          <h2 class="text-[#fff9cb] text-8xl w-full text-center my-5">
+          <h2 class="text-[#fff9cb] text-4xl lg:text-8xl w-full text-center lg:my-5">
             Lucia Caminos
           </h2>
-          <h3 class="text-[#ffb0c4] text-5xl text-start w-1/2">
+          <h3 class="text-[#ffb0c4] text-3xl lg:text-5xl text-center lg:text-start w-full lg:w-1/2">
             Lucia’s father taught her to fight as soon as she could walk.
           </h3>
           <p
-            class="text-3xl text-start text-white flex justify-center items-center w-1/2"
+            class="text-2xl lg:text-3xl text-center lg:text-start text-white flex justify-center items-center w-full lg:w-1/2"
           >
             Life has been coming at her swinging ever since. Fighting for her
             family landed her in the Leonida Penitentiary. Sheer luck got her
@@ -383,7 +391,7 @@
           </p>
         </div>
         <figure
-          class="-400 row-start-10 row-span-7 col-start-3 col-span-4 cardHover"
+          class="row-start-9 lg:row-start-10 row-span-4 lg:row-span-7 col-start-1 lg:col-start-3 col-span-12 lg:col-span-4 cardHover"
         >
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_05.jpg"
@@ -391,7 +399,7 @@
             class="w-full h-full bg-cover bg-right"
           />
         </figure>
-        <figure class="row-start-9 row-span-4 col-start-7 col-end-12 cardHover">
+        <figure class="row-start-13 lg:row-start-9 row-span-2 lg:row-span-4 col-start-1 lg:col-start-7 col-span-12 lg:col-end-12 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_02.jpg"
             alt=""
@@ -399,10 +407,10 @@
           />
         </figure>
         <div
-          class="row-start-13 row-span-4 col-start-7 col-span-4 flex justify-center items-center"
+          class="row-start-15 lg:row-start-13 row-span-2 lg:row-span-4 col-start-1 lg:col-start-7 col-span-12 lg:col-span-4 flex justify-center items-center"
         >
           <p
-            class="text-2xl text-start text-white flex justify-center items-center w-1/2"
+            class="text-xl lg:text-2xl text-start text-white flex justify-center items-center w-full lg:w-1/2"
           >
             More than anything, Lucia wants the good life her mom has dreamed of
             since their days in Liberty City — but instead of half-baked
@@ -435,36 +443,36 @@
         class="grid gap-2 grid-cols-6 grid-rows-15 w-full h-[200vh] absolute top-[29000px] left-0 z-50"
       >
         <h2
-          class="col-start-1 col-span-12 row-start-1 row-span-2 text-[#fff9cb] text-6xl w-full text-center p-[2%]"
+          class="col-start-1 col-span-6 row-start-1 row-span-1  lg:row-span-2 text-[#fff9cb] text-3xl lg:text-6xl w-full text-center lg:p-[2%]"
         >
           <q>The only thing that matters is who you know and what you got. </q>
         </h2>
         <p
-          class="col-start-2 col-span-2 row-start-3 row-span-3 text-white text-2xl text-start w-full flex justify-center items-center"
+          class="col-start-1 lg:col-start-2 col-span-6 lg:col-span-2 row-start-3 lg:row-start-3 row-span-1 lg:row-span-3 text-white text-xl  lg:text-2xl text-start w-full flex justify-center items-center"
         >
           Fresh out of prison and ready to change the odds in her favor, Lucia’s
           committed to her plan — no matter what it takes.
         </p>
         <p
-          class="col-start-4 col-span-2 row-start-3 row-span-2 text-[#ffb0c4] text-5xl text-center"
+          class="col-start-1 lg:col-start-4 col-span-6 lg:col-span-2 row-start-2 lg:row-start-3 row-span-2 text-[#ffb0c4] text-3xl lg:text-5xl text-center"
         >
           A life with Jason could be her way out.
         </p>
-        <figure class="col-start-2 col-span-2 row-end-13 row-start-6 cardHover">
+        <figure class="col-start-1 lg:col-start-2 col-span-6 lg:col-span-2 row-span-4 lg:row-end-13 row-start-4 lg:row-start-6 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_06.jpg"
             alt=""
             class="w-full h-full bg-cover bg-center"
           />
         </figure>
-        <figure class="col-start-4 col-span-3 row-start-5 row-span-7 cardHover">
+        <figure class="col-start-1 lg:col-start-4 col-span-6 lg:col-span-3 row-start-8 lg:row-start-5 row-span-4 lg:row-span-7 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_041.jpg"
             alt=""
             class="w-full h-full bg-cover bg-left"
           />
         </figure>
-        <figure class="col-start-4 col-span-2 row-span-3 cardHover">
+        <figure class="col-start-1 lg:col-start-4 col-span-6 lg:col-span-2 row-span-3 cardHover">
           <img
             src="/img/Lucia Caminos/Lucia_Caminos_03.jpg"
             alt=""
@@ -477,17 +485,17 @@
       <!-- -----------------------------  real dimez -----------------------------  -->
       <section
         id="realDimez"
-        class="w-full h-[1500vh] absolute hidden top-[34000px] left-0 bg-[url(/src/assets/real.jpg)] bg-top bg-contain bg-no-repeat bg-blue-400 z-50"
+        class="w-full h-[1500vh] absolute hidden top-[34000px] left-0 bg-[url(/src/assets/real.jpg)] bg-top bg-contain bg-no-repeat  z-50"
       >
         <div
-          class="w-full h-screen pr-[50%] flex justify-center items-center flex-col *:text-start *:w-1/2 gap-5"
+          class="w-full lg:h-screen pr-[50%] flex justify-center items-center flex-col *:text-start lg:*:w-1/2 gap-2 lg:gap-5"
         >
-          <h2 class="text-6xl uppercase text-[#fff9cb]">Real Dimez</h2>
-          <h3 class="text-yellow-200 text-4xl text-start">
+          <h2 class="text-4xl lg:text-6xl uppercase text-[#fff9cb]">Real Dimez</h2>
+          <h3 class="text-yellow-200 text-2xl lg:text-4xl text-start ">
             Viral videos. <br />
             Viral hooks.
           </h3>
-          <p class="text-3xl text-white">
+          <p class="w-full lg:text-3xl text-white ">
             Bae-Luxe and Roxy aka Real Dimez have been friends since high school
             — girls with the savvy to turn their time shaking down local dealers
             into cold, hard cash via spicy rap tracks and a relentless social
@@ -496,7 +504,7 @@
         </div>
         <div class="grid grid-rows-20 grid-cols-10 w-full h-[200vh] gap-2">
           <figure
-            class="col-start-3 col-span-3 row-start-2 row-span-8 cardHover"
+            class="col-start-1 lg:col-start-3 col-span-10 lg:col-span-3 row-start-1 lg:row-start-2 row-span-8 cardHover"
           >
             <img
               src="/public/img/Real Dimez/Real_Dimez_01.jpg"
@@ -505,7 +513,7 @@
             />
           </figure>
           <figure
-            class="col-start-6 col-span-5 row-start-1 row-span-10 cardHover"
+            class="col-start-1 lg:col-start-6 col-span-10 lg:col-span-5 row-start-9 lg:row-start-1 row-span-7 lg:row-span-10 cardHover"
           >
             <img
               src="/public/img/Real Dimez/Real_Dimez_03.jpg"
@@ -513,9 +521,8 @@
               class="w-full h-full object-cover object-center"
             />
           </figure>
-          <div
-            class="col-start-1 col-span-5 row-start-10 row-span-10 bg-red-500"
-          >
+          <div class="col-start-1 col-span-10
+           lg:col-span-5 row-start-16 lg:row-start-10 row-span-4 lg:row-span-10">
             <div id="realDimezVideoSection" class="w-full h-full">
               <canvas id="realDimezCanvas" class="w-full h-full"></canvas>
               <video
@@ -528,12 +535,12 @@
               ></video>
             </div>
           </div>
-          <div class="col-start-6 col-span-5 row-start-11 row-span-9 relative">
+          <div class="col-start-6 col-span-5 row-start-16 lg:row-start-11 row-span-9 relative">
             <div
               class="flex justify-center items-center absolute top-full left-0"
               id="realText"
             >
-              <h3 class="text-yellow-200 text-5xl text-start w-3/5">
+              <h3 class="text-yellow-200 text-3xl lg:text-5xl text-start lg:w-3/5">
                 <q>All my dimes in this club. Meet my twin, make it a dub. </q>
               </h3>
             </div>
@@ -542,7 +549,7 @@
         <!-- 000000000000000000000000000000000000000000000000000000000000000 -->
         <div class="gap-2.5 w-full h-[300vh] grid grid-rows-10 grid-cols-10">
           <figure
-            class="col-start-2 col-span-4 row-start-1 row-span-4 cardHover"
+            class="col-start-1 lg:col-start-2 col-span-10 lg:col-span-4 row-start-1 row-span-2 lg:row-span-4 cardHover"
           >
             <img
               src="/public/img/Real Dimez/Real_Dimez_02.jpg"
@@ -551,7 +558,8 @@
             />
           </figure>
           <figure
-            class="col-start-6 col-span-3 row-start-2 row-span-2 cardHover"
+            class="col-start-1 lg:col-start-6 col-span-10
+            lg:col-span-3 row-start-3 lg:row-start-2 row-span-2 cardHover"
           >
             <img
               src="/public/img/Real Dimez/Real_Dimez_04.jpg"
@@ -560,12 +568,12 @@
             />
           </figure>
           <div
-            class="row-start-4 row-span-3 col-start-6 col-span-4 flex flex-col justify-evenly items-center *:text-start"
+            class="row-start-5 lg:row-start-4 row-span-2 lg:row-span-3 col-start-1 lg:col-start-6 col-span-10 lg:col-span-4 flex flex-col justify-evenly items-center *:text-start"
           >
-            <h3 class="text-yellow-200 text-5xl text-start w-3/5">
+            <h3 style="text-align: center;" class="text-yellow-200 text-3xl  lg:text-5xl  lg:text-start w-full lg:w-3/5">
               One hit away from fame.
             </h3>
-            <p class="text-3xl text-white w-3/4">
+            <p class="text-center lg:text-start lg:p-0 p-5 text-xl lg:text-3xl text-white w-full lg:w-3/4">
               An early hit single with local rapper DWNPLY took Real Dimez to
               new heights. Now, after five years and a whole lot of trouble,
               they’re signed to Only Raw Records, hoping lightning can strike
@@ -598,14 +606,14 @@
     <!-- ------------------------------  main------------------------------  -->
 
     <!----------------- coming  section footer  ----------------->
-    <footer class="w-full h-screen hidden  fixed top-0 left-0 z-60 bg-black">
+    <footer class="w-full h-screen hidden fixed top-0 left-0 z-60 bg-black">
       <div
-        class="w-full h-full opacity-15 flex flex-col justify-center items-center "
+        class="w-full h-full opacity-15 flex flex-col justify-center items-center"
         id="footerContent"
       >
         <img src="/img/logoVi.webp" alt="" class="w-52 h-52 object-contain" />
         <h2
-          class="text-white text-9xl w-[80%] text-center"
+          class="text-white text-7xl lg:text-9xl w-[80%] text-center"
           style="
             background: linear-gradient(90deg, #ff4d4d, #ff00ff, #00eaff);
             -webkit-background-clip: text;
