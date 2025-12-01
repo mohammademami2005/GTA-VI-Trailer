@@ -11,14 +11,24 @@ Built using **HTML + CSS + JS**, bundled with **Vite**.
 
 ## ✨ Features
 
-  Feature                   Description
-  ------------------------- ----------------------------------------------
-  🏙️ Multi-Layer Parallax   Smooth GTA-style parallax animation
-  🎨 Pure Vanilla JS        No frameworks, lightweight & fast
-  ⚡ Built with Vite        Super fast bundling & hot reload
-  🎥 Smooth Animations      requestAnimationFrame + GPU-optimized layers
-  📱 Responsive             Works on desktop/tablet/mobile
-  🧩 Clean Code             Well-structured & easy to extend
+| Feature | Description |
+|--------|-------------|
+| 🏙️ Multi-Layer Parallax | Smooth GTA-style parallax animation |
+| 🎨 Pure Vanilla JS | No frameworks, lightweight & fast |
+| ⚡ Built with Vite | Super fast bundling & hot reload |
+| 🎥 Smooth Animations | requestAnimationFrame + GPU-optimized layers |
+| 📱 Responsive | Works on desktop/tablet/mobile |
+| 🧩 Clean Code | Well-structured & easy to extend |
+
+
+---
+
+## 🖼️ Screenshots Gallery
+
+<img src="/public/screenshots/desktop.png" width="100%" />
+
+
+---
 
 ## 📁 Project Structure
 
