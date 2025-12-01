@@ -25,7 +25,7 @@ Built using **HTML + CSS + JS**, bundled with **Vite**.
 
 ## 🖼️ Screenshots Gallery
 
-<img src="/screenshot/image.png" width="100%" />
+<img src="/public/screenshot/image.png" width="100%" />
 
 
 ---
