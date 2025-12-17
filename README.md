@@ -42,7 +42,7 @@ Built using **HTML + CSS + JS**, bundled with **Vite**.
      ├── index.html             # Root HTML
      └── vite.config.js         # Vite config
 
-## 💻 Run Locally
+## 💻 Run Locally 
 
 **Requirements:** Node.js 18+
 
